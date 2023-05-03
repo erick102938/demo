@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <center>
+        <TableView fx:id="tablaEstudiantes" prefWidth="600">
+            <columns>
+                <TableColumn text="Nombre" fx:id="columnaNombre" prefWidth="200">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Nombre" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Apellido" fx:id="columnaApellido" prefWidth="200">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Apellido" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Código" fx:id="columnaCodigo" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Codigo" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <FlowPane vgap="10" hgap="10" alignment="CENTER">
+            <Button text="Registrar" onAction="#registrarAction" />
+            <Button text="Eliminar" onAction="#eliminarAction" />
+            <Button text="Editar" onAction="#editarAction" />
+            <Button text="ExportarCsv" onAction="#exportarCsvAction" />
+            <Button text="ExportarBinario" onAction="#exportarBiAction" />
+            <Button text="CargarBinario" onAction="#cargarBiAction" />
+        </FlowPane >
+    </bottom>
+</BorderPane>

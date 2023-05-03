@@ -1,0 +1,5 @@
+Sofia:Gonzalez:1:Matematicas;Fisica;Quimica
+Juan:Ramirez:2:Historia;Literatura;Arte
+Maria:Sanchez:3:Biologia;Geografia;Ingles
+Carlos:Perez:4:Economia;Sociologia;Psicologia
+Laura:Rodriguez:5:Derecho;Filosofia;Politica
